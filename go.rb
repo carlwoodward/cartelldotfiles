@@ -91,7 +91,7 @@ end
 Dir.chdir("#{home}/Coding/dotfiles") do
   ohai "Symlinking..."
   (Dir.glob("*").concat(%w{ vim ssh })).each do |file|
-    if file != "README.md" && file != "go.rb"
+    unless %w{ README.md go.rb gitconfig.sample gitconfig }.include?(file)
       if File.exists?("#{home}/.#{file}")
         File.unlink("#{home}/.#{file}")
       end
