@@ -15,7 +15,6 @@ set undofile                                 " Save undo tree.
 set undodir=/tmp                             " Undo tree directory.
 set history=50                               " Size of command history.
 set encoding=utf8                            " Always use unicode.
-set clipboard+=unnamed                       " Share the clipboard.
 set backspace=indent,eol,start               " Fix backspace.
 
 set nobackup                                 " Disable backups.
@@ -159,6 +158,14 @@ map <Leader>i :IndentGuidesToggle<CR>
 " Rainbow Parenthesis
 nmap <Leader>rp :RainbowParenthesesToggle<CR>
 
+" Fugitive Status
+map <Leader>s :Gstatus<cr>
+map <Leader>c :Gcommit<cr>
+
+" Remap esc
+imap jj <ESC>
+
+
 " ------------------------------------------------------------------------------
 " CtrlP
 " ------------------------------------------------------------------------------
@@ -285,6 +292,13 @@ let g:Powerline_stl_path_style = 'filename'
 
 nnoremap <Leader>U :GundoToggle<CR>
 let g:gundo_preview_bottom = 1
+
+
+" ------------------------------------------------------------------------------
+" Gundo
+" ------------------------------------------------------------------------------
+let g:ackprg="ack -H --nocolor --nogroup --column"
+
 
 " ------------------------------------------------------------------------------
 " Rainbow Parenthesis
