@@ -153,7 +153,7 @@ nmap <Leader>c, :Tabularize /,<CR>
 vmap <Leader>c, :Tabularize /,<CR>
 
 " Indent Guides
-map <Leader>i :IndentGuidesToggle<CR>
+map <Leader>ig :IndentGuidesToggle<CR>
 
 " Rainbow Parenthesis
 nmap <Leader>rp :RainbowParenthesesToggle<CR>
