@@ -147,10 +147,10 @@ nnoremap <leader>a :Ack!<space>
 nnoremap <Leader><Leader>r :Rename!<space>
 
 " Tabular
-nmap <Leader>c<Bar> :Tabularize /<Bar><CR>
-vmap <Leader>c<Bar> :Tabularize /<Bar><CR>
-nmap <Leader>c, :Tabularize /,<CR>
-vmap <Leader>c, :Tabularize /,<CR>
+nmap <Leader><Leader>c<Bar> :Tabularize /<Bar><CR>
+vmap <Leader><Leader>c<Bar> :Tabularize /<Bar><CR>
+nmap <Leader><Leader>c, :Tabularize /,<CR>
+vmap <Leader><Leader>c, :Tabularize /,<CR>
 
 " Indent Guides
 map <Leader>ig :IndentGuidesToggle<CR>
