@@ -91,9 +91,6 @@ Bundle 'roman/golden-ratio'
 " Indent pasted lines properly. No more :set paste.
 Bundle 'sickill/vim-pasta'
 
-" Automatically closes quotes, parenthesis, brackets, etc.
-Bundle 'Raimondi/delimitMate'
-
 " Indentation-based text objects.
 Bundle 'michaeljsmith/vim-indent-object'
 
