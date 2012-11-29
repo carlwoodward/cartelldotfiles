@@ -213,11 +213,11 @@ set cursorline                    " Highlight the current line.
 set number                        " Show line numbers.
 set cmdheight=2                   " Make command line height to 2 lines.
 set cf                            " Enable error jumping.
+set colorcolumn=121               " Show the column boundary.
 syntax on                         " Enable syntax highlighting.
 filetype on                       " Detect file type.
 filetype indent on                " Enable file indenting.
 filetype plugin indent on         " Load syntax files for better indenting.
-
 
 " ------------------------------------------------------------------------------
 " User Interface
@@ -293,6 +293,13 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+
+" ------------------------------------------------------------------------------
+" Column Color
+" ------------------------------------------------------------------------------
+highlight ColorColumn ctermbg=8
+
 
 " ------------------------------------------------------------------------------
 " Indent Guides
@@ -374,8 +381,13 @@ aug end
 " Vim
 aug ft_vim
     au!
-    au FileType vim,help setlocal textwidth=80
-    au FileType vim setlocal foldmethod=marker colorcolumn=120
+    au FileType vim setlocal foldmethod=marker
+aug end
+
+" Ruby
+aug ft_ruby
+    au!
+    au FileType ruby setlocal colorcolumn=121
 aug end
 
 " Zsh
