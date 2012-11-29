@@ -64,14 +64,14 @@ Bundle 'mileszs/ack.vim'
 " Surround text keybindings
 Bundle 'tpope/vim-surround'
 
+" Auto insert end structures
+Bundle 'tpope/vim-endwise'
+
 " Launch rspec tests from vim
 Bundle 'skalnik/vim-vroom'
 
 " Format tabular text (ie Cucumber)
 Bundle 'godlygeek/tabular'
-
-" Manage undos as a tree
-Bundle 'sjl/gundo.vim'
 
 " Commenting plugin
 Bundle 'tomtom/tcomment_vim'
@@ -284,15 +284,7 @@ let g:Powerline_stl_path_style = 'filename'
 
 
 " ------------------------------------------------------------------------------
-" Gundo
-" ------------------------------------------------------------------------------
-
-nnoremap <Leader>U :GundoToggle<CR>
-let g:gundo_preview_bottom = 1
-
-
-" ------------------------------------------------------------------------------
-" Gundo
+" Ack
 " ------------------------------------------------------------------------------
 let g:ackprg="ack -H --nocolor --nogroup --column"
 
