@@ -155,9 +155,6 @@ vmap <Leader>c, :Tabularize /,<CR>
 " Indent Guides
 map <Leader>ig :IndentGuidesToggle<CR>
 
-" Rainbow Parenthesis
-nmap <Leader>rp :RainbowParenthesesToggle<CR>
-
 " Fugitive Status
 map <Leader>s :Gstatus<cr>
 map <Leader>c :Gcommit<cr>
