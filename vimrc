@@ -337,6 +337,12 @@ aug ft_coffee
             \ shiftwidth=2
 aug end
 
+" Markdown
+aug ft_markdown
+    au!
+    au BufNewFile,BufRead *.m*down,*.md setlocal filetype=markdown textwidth=80
+aug end
+
 " CSS
 aug ft_css
     au!
@@ -364,6 +370,7 @@ aug ft_git
         \ tabstop=2
         \ shiftwidth=2
         \ nofoldenable
+        \ textwidth=72
 aug end
 
 " Vagrant
@@ -375,13 +382,14 @@ aug end
 " Vim
 aug ft_vim
     au!
-    au FileType vim setlocal foldmethod=marker
+    au FileType vim,help setlocal textwidth=78
+    au FileType vim setlocal foldmethod=marker colorcolumn=79
 aug end
 
 " Ruby
 aug ft_ruby
     au!
-    au FileType ruby setlocal colorcolumn=121
+    au FileType ruby setlocal colorcolumn=121 textwidth=120
 aug end
 
 " Zsh
