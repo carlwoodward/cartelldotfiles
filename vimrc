@@ -340,7 +340,7 @@ aug end
 " Markdown
 aug ft_markdown
     au!
-    au BufNewFile,BufRead *.m*down,*.md setlocal filetype=markdown textwidth=80
+    au BufNewFile,BufRead *.m*down,*.md setlocal filetype=markdown textwidth=120 colorcolumn=121
 aug end
 
 " CSS
@@ -382,8 +382,8 @@ aug end
 " Vim
 aug ft_vim
     au!
-    au FileType vim,help setlocal textwidth=78
-    au FileType vim setlocal foldmethod=marker colorcolumn=79
+    au FileType vim,help setlocal textwidth=120
+    au FileType vim setlocal foldmethod=marker colorcolumn=121
 aug end
 
 " Ruby
