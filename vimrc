@@ -50,6 +50,7 @@ Bundle 'othree/html5.vim'
 Bundle 'claco/jasmine.vim'
 Bundle 'pangloss/vim-javascript'
 Bundle 'itspriddle/vim-jquery'
+Bundle 'vim-scripts/VimClojure'
 
 " Git
 Bundle 'tpope/vim-git'
